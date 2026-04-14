@@ -86,18 +86,18 @@ export default function PortfolioBackend() {
   ];
 
   const asciiHero = String.raw`
-┌──────────────────────────────┐
-│                              │
-│        status: online        │
-│                              │
-└──────────────────────────────┘`;
++------------------------------+
+|                              |
+|        status: online        |
+|                              |
++------------------------------+`;
 
   const asciiTree = String.raw`.
-├─ back-end
-├─ apis
-├─ bancos-de-dados
-├─ testes
-└─ integracoes`;
+|-- back-end
+|-- apis
+|-- bancos-de-dados
+|-- testes
++-- integracoes`;
 
   return (
     <main className="relative isolate min-h-screen overflow-hidden bg-black font-mono text-white">
@@ -139,7 +139,7 @@ export default function PortfolioBackend() {
         </header>
 
         <section className="mt-6 rounded-[32px] border border-white/15 bg-[#080808] px-5 py-8 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-sm sm:px-8 sm:py-10">
-          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
             <div>
               <p className="inline-flex rounded-full border border-white/15 bg-[#101010] px-3 py-1 text-xs text-white/70 shadow-[0_0_25px_rgba(255,255,255,0.05)]">
                 $ portfolio
@@ -157,7 +157,7 @@ export default function PortfolioBackend() {
 
               <div className="mt-8 flex flex-wrap gap-3 text-sm">
                 <a
-                  href="https://github.com/luaviduedo"
+                  href="https://github.com/Luan010z"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-2xl border border-white/15 bg-white px-4 py-2.5 text-black transition hover:scale-[1.02]"
@@ -197,7 +197,7 @@ export default function PortfolioBackend() {
               </div>
             </div>
 
-            <div className="rounded-[28px] border border-white/15 bg-[#050505] p-4 shadow-[0_25px_90px_rgba(0,0,0,0.55)]">
+            <div className="flex h-full min-h-[520px] flex-col rounded-[28px] border border-white/15 bg-[#050505] p-4 shadow-[0_25px_90px_rgba(0,0,0,0.55)]">
               <div className="mb-4 flex items-center gap-2 border-b border-white/10 pb-3">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.7)]" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400 shadow-[0_0_10px_rgba(250,204,21,0.7)]" />
@@ -207,11 +207,11 @@ export default function PortfolioBackend() {
                 </span>
               </div>
 
-              <pre className="overflow-x-auto whitespace-pre-wrap text-xs leading-6 text-emerald-200/90 sm:text-sm">
+              <pre className="overflow-x-auto whitespace-pre font-mono text-xs leading-5 text-emerald-200/90 sm:text-sm">
                 {asciiHero}
               </pre>
 
-              <div className="mt-5 space-y-2 border-t border-white/10 pt-4 text-sm text-white/72">
+              <div className="mt-auto space-y-2 border-t border-white/10 pt-4 text-sm text-white/72">
                 <p>
                   <span className="text-white">$</span> quemsoueu
                 </p>
@@ -244,7 +244,7 @@ export default function PortfolioBackend() {
           <div className="rounded-[28px] border border-white/15 bg-[#080808] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
             <p className="text-sm text-white/55">$ ls secoes/</p>
             <h2 className="mt-3 text-2xl font-bold">sobre</h2>
-            <pre className="mt-6 text-xs leading-5 text-white/65 sm:text-sm">
+            <pre className="mt-6 whitespace-pre font-mono text-xs leading-5 text-white/65 sm:text-sm">
               {asciiTree}
             </pre>
           </div>
@@ -396,13 +396,11 @@ export default function PortfolioBackend() {
           <h2 className="mt-3 text-2xl font-bold">contato</h2>
 
           <div className="mt-6 rounded-[24px] border border-white/12 bg-[#0a0a0a] p-5 sm:p-6">
-            <pre className="inline-block overflow-x-auto whitespace-pre text-xs leading-5 text-white/70 sm:text-sm">
-              {String.raw`┌──────────────────────────────┐
-│ disponivel para vagas        │
-│ backend e fullstack          │
-│ remoto ou presencial         │
-└──────────────────────────────┘`}
-            </pre>
+            <pre className="inline-block overflow-x-auto whitespace-pre font-mono text-xs leading-5 text-white/70 sm:text-sm">{String.raw`+------------------------------+
+| disponivel para vagas        |
+| backend e fullstack          |
+| remoto ou presencial         |
++------------------------------+`}</pre>
 
             <p className="mt-5 max-w-3xl text-sm leading-7 text-white/78 sm:text-base">
               Estou em busca de uma oportunidade para atuar com desenvolvimento
@@ -426,7 +424,7 @@ export default function PortfolioBackend() {
                 [ linkedin ]
               </a>
               <a
-                href="https://github.com/luaviduedo"
+                href="https://github.com/Luan010z"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-2xl border border-white/12 bg-[#101010] px-4 py-2 transition hover:bg-white hover:text-black"
