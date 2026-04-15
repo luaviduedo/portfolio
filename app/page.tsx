@@ -157,7 +157,7 @@ export default function PortfolioBackend() {
 
               <div className="mt-8 flex flex-wrap gap-3 text-sm">
                 <a
-                  href="https://github.com/Luan010z"
+                  href="https://github.com/luaviduedo"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-2xl border border-white/15 bg-white px-4 py-2.5 text-black transition hover:scale-[1.02]"
@@ -424,7 +424,7 @@ export default function PortfolioBackend() {
                 [ linkedin ]
               </a>
               <a
-                href="https://github.com/Luan010z"
+                href="https://github.com/luaviduedo"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-2xl border border-white/12 bg-[#101010] px-4 py-2 transition hover:bg-white hover:text-black"
